@@ -13,5 +13,3 @@ COPY --from=builder /config/config.yml /config/config.yml
 VOLUME /config
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
-
-#CMD ["ls -l"]

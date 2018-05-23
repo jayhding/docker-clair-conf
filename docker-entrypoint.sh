@@ -13,5 +13,4 @@ sed -i "s|user=postgres|user=$CLAIR_DB_USER password=$CLAIR_DB_PASSWORD|" /confi
 sed -i "s|sslmode=disable|sslmode=$CLAIR_DB_SSLMODE|" /config/config.yml
 sed -i "s|interval: 2h|interval: $CLAIR_DB_UPDATE_INTERVAL|" /config/config.yml
 
-cat /config/config.yml
 echo "> $@" && exec "$@"
